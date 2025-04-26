@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "puzzles",
+  "info": {
+    "singularName": "puzzle",
+    "pluralName": "puzzles",
+    "displayName": "Puzzle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "unique": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "maze",
+        "sudoku"
+      ],
+      "required": true
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "beginner",
+        "easy",
+        "medium",
+        "difficult"
+      ],
+      "required": true,
+      "default": "easy"
+    },
+    "solution": {
+      "type": "json",
+      "required": true
+    },
+    "metrics": {
+      "type": "json",
+      "required": true
+    },
+    "created": {
+      "type": "datetime",
+      "required": true
+    },
+    "tags": {
+      "type": "json"
+    },
+    "data": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
