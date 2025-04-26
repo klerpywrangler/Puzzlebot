@@ -1,36 +1,52 @@
 # Dependencies
 node_modules/
-/.pnp
+.pnp/
 .pnp.js
 
 # Testing
-/coverage
+coverage/
 
 # Production
-/build
-/dist
+build/
+dist/
+.next/
+out/
 
 # Misc
 .DS_Store
+*.pem
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+dbvariables.json
 
-# Logs
+# Debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Editor directories and files
-.idea
-.vscode
+# Local env files
+.env*.local
+
+# Vercel
+.vercel
+
+# Strapi
+.strapi-updater.json
+.cache/
+.temp/
+.tmp/
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
-
-# Strapi
-.strapi-updater.json 
+*.sw? 

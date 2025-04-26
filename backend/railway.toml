@@ -13,8 +13,23 @@ restartPolicyMaxRetries = 10
 NODE_ENV = "production"
 HOST = "0.0.0.0"
 PORT = "1337"
-APP_KEYS = "toBeSetInDashboard"
-API_TOKEN_SALT = "toBeSetInDashboard"
-ADMIN_JWT_SECRET = "toBeSetInDashboard"
-JWT_SECRET = "toBeSetInDashboard"
-DATABASE_CLIENT = "postgres" 
+APP_KEYS = "Pa5hZ47YzlyMm8BUwhYtfNZ4qw4eYmcVDglqIvFojk8="
+API_TOKEN_SALT = "Pa5hZ47YzlyMm8BUwhYtfNZ4qw4eYmcVDglqIvFojk8="
+ADMIN_JWT_SECRET = "Pa5hZ47YzlyMm8BUwhYtfNZ4qw4eYmcVDglqIvFojk8="
+JWT_SECRET = "Pa5hZ47YzlyMm8BUwhYtfNZ4qw4eYmcVDglqIvFojk8="
+DATABASE_CLIENT = "postgres"
+DATABASE_SSL = "true"
+
+# Database Configuration (from Railway PostgreSQL service)
+PGHOST = "${RAILWAY_PRIVATE_DOMAIN}"
+PGPORT = "5432"
+PGDATABASE = "railway"
+PGUSER = "postgres"
+PGPASSWORD = "${POSTGRES_PASSWORD}"
+
+# These will be automatically linked from the PostgreSQL service
+# PGHOST = from Railway PostgreSQL service
+# PGPORT = from Railway PostgreSQL service
+# PGDATABASE = from Railway PostgreSQL service
+# PGUSER = from Railway PostgreSQL service
+# PGPASSWORD = from Railway PostgreSQL service 
